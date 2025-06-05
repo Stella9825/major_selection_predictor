@@ -89,7 +89,7 @@ career_map = {
 }
 
 goal = st.radio("Do you wanna have broader field to choose in higher studies?", ["Yes", "NO"])
-goal_map = {"Yes": 1, "NO": 0}
+goal_map = {"Yes": 0, "NO": 1}
 
 }
 
