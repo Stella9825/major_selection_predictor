@@ -88,18 +88,9 @@ career_map = {
     "Still exploring": 0.5
 }
 
-goal = st.radio("Broad field or higher studies?", ["Yes", "NO"])
+goal = st.radio("Do you wanna have broader field to choose in higher studies?", ["Yes", "NO"])
 goal_map = {"Yes": 1, "NO": 0}
 
-reason = st.radio("Why did you choose your major?", [
-    "Peer pressure, Family or professor  pressure",
-    "No, it's my own choice",
-    "No, not so sure, I just chose one."
-])
-reason_map = {
-    "Peer pressure, Family or professor  pressure": 0,
-    "No, it's my own choice": 1,
-    "No, not so sure, I just chose one.": 0.5
 }
 
 # Make prediction
@@ -114,7 +105,7 @@ if st.button("Predict"):
         work_type_map[work_type],
         career_map[career],
         goal_map[goal],
-        reason_map[reason]
+       
     ]])
 
     prediction = model.predict(inputs)[0]
