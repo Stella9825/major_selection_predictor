@@ -12,11 +12,11 @@ st.subheader("Answer a few questions to see where your interest aligns.")
 engines = st.slider("Interest in engines/machines", 1, 5, 3)
 aviation = st.slider("Interest in planes/aviation", 1, 5, 3)
 
-work_pref = st.radio("Preferred work area:", [
+work_pref = st.radio("Which subject you found yourself fun studying?", [
     "Fluid dynamics and aerodynamics",
     "Thermodynamics and mechanics",
     "I like both equally",
-    "I’m not sure yet"
+    "I like nothing"
 ])
 work_map = {
     "Fluid dynamics and aerodynamics": 1,
@@ -25,7 +25,7 @@ work_map = {
     "I’m not sure yet": 0.5
 }
 
-excite = st.radio("What excites you most?", [
+excite = st.radio("What excites you the most?", [
     "Jet engines and aircraft systems",
     "Space exploration and satellite systems",
     "Robotics and mechanical devices",
@@ -38,7 +38,7 @@ excite_map = {
     "Automotive design and engines": 0
 }
 
-design = st.radio("Preferred design challenge:", [
+design = st.radio("Which challenges would you like to solve? ", [
     "Optimizing aerodynamic surfaces for aircraft",
     "Designing energy-efficient mechanical parts",
     "Both",
@@ -51,7 +51,7 @@ design_map = {
     "Neither": 0
 }
 
-project = st.radio("Final-year project choice:", [
+project = st.radio("If you do your final-project, which type you wanna work with?", [
     "Designing a flight simulation system",
     "Modeling a spacecraft component",
     "Building an autonomous robot",
@@ -64,7 +64,7 @@ project_map = {
     "Developing a fuel-efficient car engine": 0.0
 }
 
-work_type = st.radio("Preferred work type:", [
+work_type = st.radio("Which one attracts your attention more?", [
     "Simulating or analyzing flight and aerodynamic behaviour",
     "Designing and building mechanical systems",
     "Both equally"
@@ -75,7 +75,7 @@ work_type_map = {
     "Both equally": 0.5
 }
 
-career = st.radio("Where do you see yourself working?", [
+career = st.radio("In which workfield do you think you'll be happy to do?", [
     "Aerospace engineering",
     "Automotive or manufacturing engineering",
     "Research and academia",
