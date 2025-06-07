@@ -16,7 +16,7 @@ work_pref = st.radio("Which subject you found yourself fun studying?", [
     "Fluid dynamics and aerodynamics",
     "Thermodynamics and mechanics",
     "I like both equally",
-    "I like nothing"
+    "I’m not sure yet"
 ])
 work_map = {
     "Fluid dynamics and aerodynamics": 1,
