@@ -91,6 +91,7 @@ career_map = {
 goal = st.radio("Do you wanna have broader field to choose in higher studies?", ["Yes", "NO"])
 goal_map = {"Yes": 0, "NO": 1}
 
+reason_value = 1
 
 # Make prediction
 if st.button("Predict"):
@@ -104,6 +105,7 @@ if st.button("Predict"):
         work_type_map[work_type],
         career_map[career],
         goal_map[goal],
+        reason_value
        
     ]])
 
